@@ -1,2 +1,2 @@
-export { default as Chart } from './Chart';
-export * from './Chart/ChartTypes';
+import Chart from './Chart';
+export default Chart;

@@ -1,6 +1,6 @@
 {
   "name": "@bsw/react-native-echarts",
-  "version": "0.0.1-pratik.8",
+  "version": "0.0.1-pratik.9",
   "private": false,
   "scripts": {
     "android": "react-native run-android",
