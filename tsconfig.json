@@ -1,3 +1,56 @@
+// {
+//   "extends": "@react-native/typescript-config/tsconfig.json",
+//   "compilerOptions": {
+//     "allowSyntheticDefaultImports": true,
+//     "declaration": true,
+//     "declarationMap": true,
+//     "sourceMap": true,
+//     "outDir": "./lib",
+//     "rootDir": "./src",
+//     "module": "NodeNext",
+//     "moduleResolution": "node16",
+//     "jsx": "react-native",
+//     "skipLibCheck": true,
+//     "strict": true,
+//     "esModuleInterop": true,
+//     "allowJs": true,
+//     "resolveJsonModule": true,
+//     "isolatedModules": true
+//   },
+//   "include": ["src/**/*"],
+//   "exclude": ["node_modules", "lib", "**/__tests__/*"]
+// }
+
+
 {
-  "extends": "@react-native/typescript-config/tsconfig.json"
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "CommonJS",
+    "lib": ["es2017", "dom"],
+    "allowJs": true,
+    "jsx": "react-native",
+    "isolatedModules": false,
+    "strict": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "rootDir": "src",
+    "outDir": "dist",
+    "types": ["react-native", "jest"],
+    "declaration": true
+  },
+  "include": ["src", 
+    "src/components/**/*.json"],
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js",
+    ".eslintrc.js",
+    ".prettierrc",
+    "index.js"
+  ]
 }

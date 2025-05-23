@@ -11,7 +11,7 @@ AppRegistry.registerComponent(appName, () => App);
 
 // @ts-ignore
 module.exports = {
-    // Chart,
+    Chart,
 };
 
-export { default } from './components';
+export { default } from './src/components';

@@ -1,4 +1,4 @@
-/* eslint-disable react/react-in-jsx-scope */
+import * as React from 'react';
 import { FC, useEffect, useRef } from 'react';
 import { ChartProps } from './ChartTypes';
 import * as echarts from 'echarts/core';
@@ -44,7 +44,7 @@ function RenderComponent({ option, theme }: any) {
   return <SvgChart ref={svgRef} useRNGH />;
 }
 const theme = 'light';
-export const Chart: FC<ChartProps> = ({
+export const BSWChart: FC<ChartProps> = ({
   option,
 }: ChartProps) => {
   return (
@@ -62,4 +62,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Chart;
+export default BSWChart;

@@ -11,7 +11,7 @@ import {
   Colors,
 } from 'react-native/Libraries/NewAppScreen';
 import { gestureHandlerRootHOC } from 'react-native-gesture-handler';
-import { Chart } from './src/components/Chart/Chart';
+import { BSWChart } from './src/components/Chart/Chart';
 
 const fontFamily = Platform.select({
   ios: 'PingFang SC',
@@ -56,7 +56,7 @@ function App(): React.JSX.Element {
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
           <View style={styles.container}>
-            <Chart option={option} />
+            <BSWChart option={option} />
           </View>
       </ScrollView>
     </SafeAreaView>
